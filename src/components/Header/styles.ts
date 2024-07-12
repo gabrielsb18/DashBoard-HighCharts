@@ -38,7 +38,7 @@ export const Main = styled.main`
         height: 46px;
         margin: 0;
 
-        font-weight: normal;
+        font-weight: bold;
         font-size: 36px;
         line-height: 44px;
 
@@ -52,7 +52,8 @@ export const Main = styled.main`
 
 export const Content = styled.section`
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: space-between;
     margin-top: 40px;
 
@@ -87,32 +88,17 @@ export const Content = styled.section`
         }
     }
 
-    &::after {
-        content: "▼";
-        font-size: 1rem;
-        top: 20px;
-        right: 24px;
-        position: absolute;
-
-        @media ${device.xs} {
-            top: 90px;
-            right: 45px;
-        }
-    }
-
     h3 {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
 
-        border-radius: 2px;
         margin: 0;
-        border: 1px solid ${AnalyticsColors.grey};
 
-        width: 270px;
-        height: 58px;
+        width: 300px;
+        height: 60px;
 
-        font-weight: bold;
+        font-weight: normal;
         font-size: 24px;
         line-height: 29px;
 

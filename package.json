@@ -23,7 +23,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "server": "json-server --watch --port 5000 src/data/db.json",
     "build": "react-scripts build",
     "test": "react-scripts test",

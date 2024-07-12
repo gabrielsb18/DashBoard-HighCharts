@@ -4,7 +4,7 @@ import * as Highcharts from "highcharts";
 type ChartProps = {
     options: Highcharts.Options;
 };
-
+// Configuração padrão do gráfico, "INDEX"
 const Chart = ({ options }: ChartProps) => {
     Highcharts.setOptions({
         rangeSelector: {
